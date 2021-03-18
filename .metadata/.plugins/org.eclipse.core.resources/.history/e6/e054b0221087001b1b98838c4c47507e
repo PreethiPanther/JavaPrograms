@@ -1,0 +1,35 @@
+
+public class Player {
+public Player(String name, int age, String game) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.game = game;
+	}
+String name;
+int age;
+String game;
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+public String getGame() {
+	return game;
+}
+public void setGame(String game) {
+	this.game = game;
+}
+@Override
+public String toString() {
+	return "Player [name=" + name + ", age=" + age + ", game=" + game + "]";
+}
+
+}

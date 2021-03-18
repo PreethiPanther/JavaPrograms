@@ -1,0 +1,23 @@
+
+class LessThanZeroExpection extends Exception{
+	public LessThanZeroExpection(String s){
+		super(s);	
+	}
+}
+class CheckPrime{
+	void checkPrime(int num)throws LessThanZeroExpection{
+		if(num <0){
+			throw new LessThanZeroExpection("number is less than 0");
+		}
+	}
+}
+public class Prime {
+	public static void main(String[] args) {
+		CheckPrime c = new CheckPrime();
+		try {
+		c.checkPrime(-3);
+		} catch(LessThanZeroExpection l) {
+			System.out.println(l.getMessage());
+		}
+	}
+}

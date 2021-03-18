@@ -1,0 +1,10 @@
+
+public class ImmutableBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       ImmutableClass im = new ImmutableClass.ImmutableClassBuilder("preethi").build();
+       
+	}
+
+}

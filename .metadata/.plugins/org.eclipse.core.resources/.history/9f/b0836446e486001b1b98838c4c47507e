@@ -1,0 +1,11 @@
+
+public class student {
+	
+	String name;
+	int id;
+	int age;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubsoutsoutn
+		
+	}
+}

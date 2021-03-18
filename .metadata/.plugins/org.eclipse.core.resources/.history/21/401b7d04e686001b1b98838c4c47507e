@@ -1,0 +1,19 @@
+
+public class FirstCode extends Thread{
+	
+	public void run(){
+		System.out.println("hi");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubsoutsoutn
+		
+		FirstCode c =  new FirstCode();
+		Thread t = new Thread(c);
+		t.start();
+		Thread t1 = new Thread(c);
+		t1.start();
+		
+	}
+
+}

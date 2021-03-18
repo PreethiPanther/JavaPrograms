@@ -1,0 +1,33 @@
+import java.io.*;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Order o1 = new Order(1,"Pencil","preethi");
+      Order o2 = new Order(1,"Eraser","meena");
+      Order o3 = new Order(1,"scale","swetha");
+      Order o4 = new Order(1,"pen","sujatha");
+      System.out.println("hii"+o3.toString());
+      try {
+    	 FileOutputStream f = new FileOutputStream(new File("myObj.txt"));
+    	 ObjectOutputStream o = new ObjectOutputStream(f);
+    	 o.writeObject(o1);
+    	 o.writeObject(o2);
+    	 o.writeObject(o3);
+    	 o.writeObject(o4);
+    	 
+    	 o.close();
+    	 f.close();
+    	 
+    	
+      }catch (FileNotFoundException e){
+    	  System.out.println("fileno");
+      }catch (IOException e){
+    	  System.out.println("inout");
+      }
+	
+
+}
+}

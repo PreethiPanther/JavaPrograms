@@ -1,0 +1,9 @@
+
+public class FactoryPatternobject {
+	public static void main(String[] args) {
+		ShapeFactory shape = new ShapeFactory();
+		
+		Shape s1= shape.getShape("CIRCLE");
+		s1.display();
+	}
+}

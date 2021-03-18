@@ -1,0 +1,17 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set <Player> p= new HashSet<>();
+		p.add(new Player("preethi",3,"cricket"));
+		p.add(new Player("preethi",23,"tennis"));
+		p.add(new Player("preethi",3,"volleyball"));
+		System.out.println("set"+p);
+
+	}
+
+}

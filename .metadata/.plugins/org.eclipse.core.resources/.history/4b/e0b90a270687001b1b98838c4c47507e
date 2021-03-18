@@ -1,0 +1,22 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Main implements Runnable{
+
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+Main m = new Main();
+ExecutorService service =Executors.newFixedThreadPool(3);
+service.submit(task)
+
+	}
+
+
+}

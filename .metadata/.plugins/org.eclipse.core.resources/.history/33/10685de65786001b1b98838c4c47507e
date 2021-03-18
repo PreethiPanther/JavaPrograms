@@ -1,0 +1,10 @@
+
+public class FirstCode {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubsoutsoutn
+		System.out.println("hi");
+		
+	}
+
+}
